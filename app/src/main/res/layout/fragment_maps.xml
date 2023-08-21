@@ -30,8 +30,9 @@
         android:layout_width="@dimen/maps_fragment_close_heigh"
         android:layout_height="@dimen/maps_fragment_close_heigh"
         android:layout_margin="@dimen/maps_fragment_close_margin"
+        app:icon="@drawable/ic_close"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:background="@drawable/ic_close"/>
+        tools:background="@drawable/ic_close" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
