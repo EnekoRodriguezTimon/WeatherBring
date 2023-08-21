@@ -5,4 +5,8 @@
     <dimen name="main_activity_add_city_button_margin_right">22dp</dimen>
     <dimen name="main_activity_add_city_button_margin_bottom">22dp</dimen>
     <dimen name="main_activity_background_image_margin_bottom">-350dp</dimen>
+
+    <!--Maps fragment -->
+    <dimen name="maps_fragment_close_margin">10dp</dimen>
+    <dimen name="maps_fragment_close_heigh">25dp</dimen>
 </resources>

@@ -3,4 +3,6 @@
 
     <!--Main activity -->
     <string name="main_activity_no_cities_message">Start adding a new place</string>
+    <!--Maps fragment-->
+    <string name="fragment_maps_save_button">Save location</string>
 </resources>
