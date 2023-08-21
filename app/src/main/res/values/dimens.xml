@@ -9,4 +9,8 @@
     <!--Maps fragment -->
     <dimen name="maps_fragment_close_margin">10dp</dimen>
     <dimen name="maps_fragment_close_heigh">25dp</dimen>
+
+    <!--Locations row -->
+    <dimen name="location_row_icon_size">20dp</dimen>
+    <dimen name="location_row_icon_margin_right">15dp</dimen>
 </resources>

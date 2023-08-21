@@ -18,7 +18,31 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="@dimen/main_activity_background_image_margin_bottom"/>
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbAddCities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="@dimen/main_activity_add_city_button_margin_right"
+        android:layout_marginBottom="@dimen/main_activity_add_city_button_margin_bottom"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLocations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"/>
+
     <LinearLayout
+        android:id="@+id/llAddCities"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -32,7 +56,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:clickable="true"
             android:src="@android:drawable/ic_input_add" />
 
         <TextView
@@ -42,21 +65,10 @@
             android:layout_marginTop="@dimen/main_activity_no_cities_message_margin_top"
             android:text="@string/main_activity_no_cities_message" />
     </LinearLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:src="@android:drawable/ic_input_add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="@dimen/main_activity_add_city_button_margin_right"
-        android:layout_marginBottom="@dimen/main_activity_add_city_button_margin_bottom"
-        android:visibility="gone"/>
     <FrameLayout
         android:id="@+id/flMaps"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

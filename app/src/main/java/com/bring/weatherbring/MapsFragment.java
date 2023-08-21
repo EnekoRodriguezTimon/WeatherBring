@@ -36,6 +36,7 @@ public class MapsFragment extends Fragment {
     private Button btSaveLocation;
     private Location locationToSave;
 
+
     public interface OnLocationChangeListener {
         void onLocationChanged(Location location);
     }
@@ -61,20 +62,21 @@ public class MapsFragment extends Fragment {
         btSaveLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("eneko", String.valueOf(btSaveLocation.isClickable()));
                 if(btSaveLocation.isClickable()) {
-                    locationChangeListener.onLocationChanged(locationToSave);
                     closeFragment();
                 }
             }
         });
+
         btSaveLocation.setClickable(false);
         ivCloseFragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                locationToSave = null;
                 closeFragment();
             }
         });
+
         if (mapFragment != null) {
             mapFragment.getMapAsync(callback);
         }
@@ -107,7 +109,7 @@ public class MapsFragment extends Fragment {
                             String coordinates = "Latitude: " + latitude + ", longitude: " + longitude;
                             Toast.makeText(getContext(), coordinates, Toast.LENGTH_SHORT).show();
                             //save selected location
-                            location = new Location("nameless", latitude, longitude);
+                            location = new Location("", latitude, longitude);
                         }
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -146,6 +148,7 @@ public class MapsFragment extends Fragment {
     }
 
     private void closeFragment() {
+        locationChangeListener.onLocationChanged(locationToSave);
         getFragmentManager().beginTransaction().remove(this).commit();
     }
 
