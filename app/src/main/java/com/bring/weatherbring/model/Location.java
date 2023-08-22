@@ -1,8 +1,13 @@
 package com.bring.weatherbring.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
 import java.io.Serializable;
 
-public class Location implements Serializable {
+public class Location implements Serializable{
     private String cityName;
     private double latitude;
     private double longitude;
@@ -36,4 +41,5 @@ public class Location implements Serializable {
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
     }
+
 }

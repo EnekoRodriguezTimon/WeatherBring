@@ -7,11 +7,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.bring.weatherbring.adapters.LocationAdapter;
+import com.bring.weatherbring.fragments.MapsFragment;
 import com.bring.weatherbring.model.Location;
 import com.bring.weatherbring.util.PermissionsManager;
 import com.bring.weatherbring.util.SharedPreferencesManager;

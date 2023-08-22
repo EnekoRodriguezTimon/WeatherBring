@@ -5,4 +5,9 @@
     <string name="main_activity_no_cities_message">Start adding a new place</string>
     <!--Maps fragment-->
     <string name="fragment_maps_save_button">Save location</string>
+    <!--Weather fragment-->
+    <string name="fragment_weather_temp_text">Temperature:</string>
+    <string name="fragment_weather_humidity_text">Humidity:</string>
+    <string name="fragment_weather_rain_text">Rain provability:</string>
+    <string name="fragment_weather_wind_text">Wind speed:</string>
 </resources>

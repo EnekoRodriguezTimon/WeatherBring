@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/infoTextAlignRight"
+                android:text="@string/fragment_weather_temp_text" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/infoTextAlignRight"
+                android:text="@string/fragment_weather_humidity_text" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/infoTextAlignRight"
+                android:text="@string/fragment_weather_rain_text" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/infoTextAlignRight"
+                android:text="@string/fragment_weather_wind_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvWeatherDetailTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/infoTextAlignLeft" />
+            <TextView
+                android:id="@+id/tvWeatherDetailHumidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/infoTextAlignLeft" />
+            <TextView
+                android:id="@+id/tvWeatherDetailRain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/infoTextAlignLeft" />
+            <TextView
+                android:id="@+id/tvWeatherDetailWind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/infoTextAlignLeft"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

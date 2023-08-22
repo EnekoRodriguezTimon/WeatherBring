@@ -1,4 +1,4 @@
-package com.bring.weatherbring;
+package com.bring.weatherbring.fragments;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bring.weatherbring.R;
 import com.bring.weatherbring.model.Location;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -57,7 +58,7 @@ public class MapsFragment extends Fragment {
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         btSaveLocation = view.findViewById(R.id.btSaveLocation);
-        Button ivCloseFragment = view.findViewById(R.id.ivCloseFragment);
+        ImageView ivCloseFragment = view.findViewById(R.id.ivCloseFragment);
 
         btSaveLocation.setOnClickListener(new View.OnClickListener() {
             @Override
