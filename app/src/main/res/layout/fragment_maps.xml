@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapsFragment">
+    tools:context=".fragments.MapsFragment">
 
     <fragment
         android:id="@+id/map"
@@ -25,14 +25,13 @@
         android:clickable="false"
         android:backgroundTint="@color/inactiveBackground"/>
 
-    <Button
+    <ImageView
         android:id="@+id/ivCloseFragment"
-        android:layout_width="@dimen/maps_fragment_close_heigh"
-        android:layout_height="@dimen/maps_fragment_close_heigh"
-        android:layout_margin="@dimen/maps_fragment_close_margin"
-        app:icon="@drawable/ic_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:background="@drawable/ic_close" />
+        app:srcCompat="@drawable/ic_close"  />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
