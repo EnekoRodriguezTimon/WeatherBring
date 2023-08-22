@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="locationRowText">
+        <item name="android:textSize">15dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="titleText">
+        <item name="android:textSize">30dp</item>
+        <item name="android:padding">30dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="infoTextAlignRight">
+        <item name="android:textSize">20dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">end</item>
+    </style>
+    <style name="infoTextAlignLeft">
+        <item name="android:textSize">20dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">start</item>
+    </style>
+</resources>

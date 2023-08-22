@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Main activity -->
+    <dimen name="main_activity_no_cities_message_margin_top">12dp</dimen>
+    <dimen name="main_activity_add_city_button_margin_right">22dp</dimen>
+    <dimen name="main_activity_add_city_button_margin_bottom">22dp</dimen>
+    <dimen name="main_activity_background_image_margin_bottom">-350dp</dimen>
+
+    <!--Maps fragment -->
+    <dimen name="maps_fragment_close_margin">10dp</dimen>
+    <dimen name="maps_fragment_close_heigh">25dp</dimen>
+
+    <!--Locations row -->
+    <dimen name="location_row_icon_size">20dp</dimen>
+    <dimen name="location_row_icon_margin_right">15dp</dimen>
+</resources>
